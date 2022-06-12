@@ -1,8 +1,10 @@
 body {
-  background-color:black;
-  text-align: center;
-  color:limegreen;
-  padding-top: 10em;
+    background-color:black;
+    text-align: center;
+    color:limegreen;
+    padding-top: 10em;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 * { color:limegreen; text-decoration: none;}
@@ -12,10 +14,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 3rem;
 }
 
 img {
     border-radius: 50%;
+}
+
+.pfp {
+    padding-bottom: 3rem;
 }
 
 .social-icons .fa {

@@ -1,43 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- icons !-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- tab formating !-->
-<title>UnderCurve's Bio</title>
-<link rel="icon" href="img/favicon.ico">
-<!-- css import !-->
-<link type="text/css" href="css/style.css" rel="stylesheet">
-<link type="text/css" href="css/cursor.css" rel="stylesheet">
-<!-- discord embed !-->
+    <!-- Website meta stuff !-->
+	<meta charset="utf-8">
+	<title>UnderCurve's Bio</title>
+	<meta name="author" content="UnderCurve">
+	<meta name="description" content="UnderCurve's Bio Website | Discord: UnderCurve#6641">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Discord embed !-->
     <meta content="UnderCurve.wdym.info" property="og:title" />
     <meta content="UnderCurve's Bio" property="og:description" />
     <meta content="https://UnderCurve.wdym.info/" property="og:url" />
-    <meta content="https://UnderCurve.wdym.info/img/icon.png" property="og:image" />
+    <meta content="https://UnderCurve.wdym.info/img/pfp.png" property="og:image" />
     <meta content="#32cd32" data-react-helmet="true" name="theme-color" />
+    <!-- CSS and ico import !-->
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+	<link rel="icon" type="img/x-icon" href="img/favicon.ico"/>
+    <!-- Import AOS CSS !-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- Import Font Awesome !-->
+    <script src="https://kit.fontawesome.com/19e86fcc7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- my pfp !-->
-    <div class="pfp"><img alt="This is where my pfp would go" src="img/pfp.png" draggable="false"></div>
-<!-- typing effect !-->
-<h1>
-  <a class="typewrite" data-period="2000" data-type='[ "Hello my name is UnderCurve.", "I Know JavaScript, Python, Html and, Skript" ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
-
-<!-- the buttons !-->
-<div class="buttons">
-    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-        <li><a href="https://github.com/UnderCurve" draggable="false"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://twitch.tv/UnderCurve69" draggable="false"><i class="fa fa-twitch"></i></a></li>
-        <li><a href="https://youtube.com/channel/UCvu4vMw7WKAK780tkv3lr1w" draggable="false"><i class="fa fa-youtube-play"></i></a></li>
-        </ul>
+    <!-- Navbar !-->
+    <div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#socials">Socials</a>
     </div>
-<!-- Custom Cursor Div !-->
-<div class="cursor"></div>
-<!-- JavaScript import !-->
-<script src="js/script.js"></script>
-<script src="js/cursor.js"></script>
+    <!-- Welcome text !-->
+	<header id="home">
+    <div class="grid">
+    <div data-aos="fade-up" data-aos-duration="1000">
+    <div class="underline">
+    <h1>Hello, I'm UnderCurve</h1>
+    </div>
+    </div>
+    </div>
+    </header>
+    <!-- Main bio !-->
+	<main id="about">
+    <div class="grid">
+    <div data-aos="zoom-out" data-aos-duration="1000">
+    <h1>I am a developer that programs in</h1>
+    <div class="underline">
+    <h1>JavaScript, Python, Html, and Skript</h1>
+    </div>
+    </div>
+    </div>
+    </main>
+    <!-- Socials and credits !-->
+	<footer>
+    <socials>
+    <div class="grid">
+    <div data-aos="flip-up" data-aos-duration="1000">
+    <div class="underline">
+    <a href="https://discord.gg/jMXr2Cp7eF" draggable="false"><i class="fa-brands fa-discord fa-3x"></i></a>
+    <a href="https://github.com/UnderCurve" draggable="false"><i class="fa-brands fa-github fa-3x"></i></a>
+    <a href="https://twitch.tv/UnderCurve69" draggable="false"><i class="fa-brands fa-twitch fa-3x" id="socials"></i></a>
+    <a href="https://youtube.com/channel/UCvu4vMw7WKAK780tkv3lr1w" draggable="false"><i class="fa-brands fa-youtube fa-3x"></i></a>
+    <a href="https://youtube.com/channel/UCyjY86HndX9EeuyWPcDwa5g" draggable="false"><i class="fa-solid fa-camera fa-3x"></i></a>
+    </div>
+    </div>
+    </div>
+    </socials>
+    <div class="grid">
+    <div data-aos="zoom-in" data-aos-duration="1000">
+    <p>This Site was made by UnderCurve</p>
+    </div>
+    </div>
+    </footer>
+    <!-- JS stuff !-->
+	<script type="text/javascript" src="js/script.js"></script>
+    <!-- Import JS and initialize AOS !-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

@@ -3,8 +3,6 @@
   
 <head>
     <title>404 Error</title>
-    <meta http-equiv="refresh" content="1; url =
-    /index.html" />
 </head>
   
 <body>
@@ -14,5 +12,13 @@
     </p>
   
 </body>
-  
+  <script>
+  if (window.location.pathname === "/discord") {
+    window.location.href = "https://discord.gg/jMXr2Cp7eF";
+  } else if (window.location.pathname === "/quoted" || window.location.pathname.startsWith("/quoted/")) {
+    window.location.href = "/Quoted" + window.location.pathname.substring(7);
+  } else if (window.location.pathname === "/quote") {
+    window.location.href = "/Quoted";
+  }
+  </script>
 </html>

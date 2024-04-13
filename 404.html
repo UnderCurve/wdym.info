@@ -3,24 +3,14 @@
   
 <head>
     <title>404 Error</title>
+    <meta http-equiv="refresh" content="0; url=/" />
 </head>
   
 <body>
     <h1 style="text-align:center;">404 Not Found</h1>
     <p style="text-align:center;">
-        You found a bug! Please give us a moment to fix it.
+        1 sec while we redirect you to the home page.
     </p>
   
 </body>
-  <script>
-  if (window.location.pathname === "/discord") {
-    window.location.href = "https://discord.gg/jMXr2Cp7eF";
-  } else if (window.location.pathname === "/quoted" || window.location.pathname.startsWith("/quoted/")) {
-    window.location.href = "/Quoted" + window.location.pathname.substring(7);
-  } else if (window.location.pathname === "/quote") {
-    window.location.href = "/Quoted";
-  } else {
-    window.location.href = "/";
-  }
-  </script>
 </html>
